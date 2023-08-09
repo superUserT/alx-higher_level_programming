@@ -1,1 +1,1 @@
-Direcry for pyton
+Directory for python
