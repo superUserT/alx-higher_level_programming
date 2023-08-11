@@ -9,5 +9,5 @@ if __name__ == '__main__':
         print("1 argument:")
     else:
         print(f"{argc} arguments:")
-    for items in range(argc):
-        print(f"{items + 1}: {argc[items]}")
+    for j in range(argc):
+        print(f"{j + 1}: {arguments[j]}")
