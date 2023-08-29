@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """Class that defines a square by its size"""
 class Square:
+    """Represents a square"""
     def __init__(self, size=0):
-        """
-        Type and value validation in if else tree
-        
+        """Validation
         Args:
             size (int): square size
         """
