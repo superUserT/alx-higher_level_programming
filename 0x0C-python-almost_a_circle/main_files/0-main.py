@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ 0-main """
+from sys import path
+path.append('../')
 from models.base import Base
 
 if __name__ == "__main__":
