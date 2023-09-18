@@ -4,8 +4,7 @@
 
 class Base:
     """Represents the base model"""
-    
-    
+
     """Public class attributes"""
     __nb_objects = 0
 
