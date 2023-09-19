@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""A base Class for the model Circle"""
+"""This class will be the “base” of all other classes in this project."""
 
 
 class Base:
-    """Represents the base model"""
-
-    """Public class attributes"""
+    ''' private class attribute '''
     __nb_objects = 0
-
+    ''' class constructor '''
     def __init__(self, id=None):
-        """Initialize a new Base"""
         if id is not None:
             self.id = id
         else:
