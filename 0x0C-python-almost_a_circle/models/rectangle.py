@@ -75,6 +75,21 @@ class Rectangle(Base):
 
 
     def display(self):
-        """Print the rectangle using '#' characters"""
-        for _ in range(self.height):
-            print('#' * self.width)
+        """Print the rectangle using '#' characters with x and y offsets"""
+        for i in range(self.y):
+            print()
+        for i in range(self.height):
+            print(' ' * self.x + '#' * self.width)
+
+
+    def __str__(self):
+        """Returns rectangle description"""
+        name = str(self.__class__.__name__)
+        id = str(self.id)
+        w = str(self.__width)
+        h = str(self.__height)
+        x = str(self.__x)
+        y = str(self.__y)
+        
+        return f"[{name}] ({id}) {x}/{y} - {w}/{h}"
+    
