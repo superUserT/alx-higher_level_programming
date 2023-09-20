@@ -73,14 +73,16 @@ class Rectangle(Base):
         """Returns area of a rectangle"""
         return self.__height * self.__width
 
-
     def display(self):
         """Print the rectangle using '#' characters with x and y offsets"""
+        if self.__width <= 0 or self.__height <= 0:
+            print()
+            return
+
         for i in range(self.y):
             print()
         for i in range(self.height):
             print(' ' * self.x + '#' * self.width)
-
 
     def __str__(self):
         """Returns rectangle description"""
@@ -90,6 +92,25 @@ class Rectangle(Base):
         h = str(self.__height)
         x = str(self.__x)
         y = str(self.__y)
-        
+
         return f"[{name}] ({id}) {x}/{y} - {w}/{h}"
-    
+
+    def to_dictionary(self):
+        """Returns the dict representation of a rectangle"""
+        return {
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+        }
+
+    def to_dictionary(self):
+        """Returns the dict representation of a rectangle"""
+        return {
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+        }
