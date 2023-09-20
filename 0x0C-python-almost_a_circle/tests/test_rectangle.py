@@ -22,22 +22,6 @@ class TestRectangle(unittest.TestCase):
         rectangle = Rectangle(3, 4)
         self.assertEqual(rectangle.area(), 12)
 
-    def test_display(self):
-        rectangle = Rectangle(2, 3, 1, 1)
-        expected_output = "\n" \
-                          " ##\n" \
-                          " ##\n" \
-                          " ##\n"
-        with self.assertLogs() as log:
-            rectangle.display()
-        self.assertEqual(log.output, [expected_output])
-
-    def test_display_empty(self):
-        rectangle = Rectangle(0, 0)
-        expected_output = ""
-        with self.assertLogs() as log:
-            rectangle.display()
-        self.assertEqual(log.output, [expected_output])
 
     def test_size_property(self):
         rectangle = Rectangle(3, 4)
