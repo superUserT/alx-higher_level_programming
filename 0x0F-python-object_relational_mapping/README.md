@@ -34,7 +34,3 @@ The project outlines specific requirements, including allowed editors, Python ve
 ## Tasks
 
 The project includes multiple tasks, each requiring the implementation of Python scripts that interact with a MySQL database. The tasks cover topics like retrieving data, filtering, avoiding SQL injection, and using SQLAlchemy for ORM.
-
----
-
-Feel free to customize this summary based on your preferences and additional details you may want to include in your README file.
