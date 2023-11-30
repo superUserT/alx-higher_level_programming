@@ -4,13 +4,17 @@
 
 def find_peak(list_of_integers):
     """Return a peak in a list of unsorted integers."""
-    peak_list = []
-
-    if len(list_of_integers) == 0:
+    if not list_of_integers:
         return None
-    else:
-        peak_list.append(max(list_of_integers))
 
-    string_converted_list = ' '.join(map(str, peak_list))
+    low, high = 0, len(list_of_integers) - 1
 
-    return string_converted_list
+    while low < high:
+        mid = (low + high) // 2
+
+        if list_of_integers[mid] < list_of_integers[mid + 1]:
+            low = mid + 1
+        else:
+            high = mid
+
+    return list_of_integers[low]
