@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# finding the peak within a list 
+
 
 def find_peak(list_of_integers):
     peak_list = []
