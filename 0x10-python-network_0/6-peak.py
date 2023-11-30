@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+def find_peak(list_of_integers):
+    peak_list = []
+
+    if len(list_of_integers) == 0:
+        return "None"
+    else:
+        peak_list.append(max(list_of_integers))
+
+    string_converted_list = ' '.join(map(str, peak_list))
+
+    return string_converted_list
