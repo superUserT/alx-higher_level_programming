@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-# finding the peak within a list 
+""" module finds the peak of a number """ 
 
 
 def find_peak(list_of_integers):
-    """Return a peak in a list of unsorted integers."""
+    """
+        find the peak of list of numbers
+
+        Args:
+            list_of_integers: list of integers
+
+        Returns: the number of the peak
+    """
     if not list_of_integers:
         return None
 
