@@ -23,5 +23,6 @@ def search_api():
     except Exception as e:
         print("Not a valid JSON")
 
+
 if __name__ == "__main__":
     search_api()

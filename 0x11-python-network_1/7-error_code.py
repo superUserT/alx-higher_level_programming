@@ -11,5 +11,6 @@ def error_code():
     else:
         print(url_response.text)
 
+
 if __name__ == "__main__":
     error_code()

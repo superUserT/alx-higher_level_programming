@@ -2,6 +2,7 @@
 """ get content from a specified url """
 import urllib.request
 
+
 def status():
     """Python script that fetches https://alx-intranet.hbtn.io/status"""
     string_url = "https://alx-intranet.hbtn.io/status"
@@ -14,6 +15,7 @@ def status():
         print("\t- type:", type(url_content))
         print("\t- content:", url_content)
         print("\t- utf8 content:", utf8_content)
+
 
 if __name__ == "__main__":
     status()

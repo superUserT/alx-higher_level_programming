@@ -2,6 +2,7 @@
 """ use requests """
 import requests
 
+
 def fetch_status():
     """function that fetches a status"""
     url_response = requests.get("https://alx-intranet.hbtn.io/status")

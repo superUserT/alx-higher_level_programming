@@ -3,6 +3,7 @@
 import sys
 import requests
 
+
 def post_email():
     """function that takes in a URL and an email address, sends a POST"""
     email_string_data = {"email": sys.argv[2]}

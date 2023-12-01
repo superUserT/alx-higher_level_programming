@@ -3,8 +3,9 @@
 import sys
 import requests
 
+
 def response_header_value():
-    """Function that  takes in a URL, sends a request to the URL and displays the value"""
+    """Function sends a request to the URL and displays the value"""
     url_response = requests.get(sys.argv[1])
 
     if 'X-Request-Id' in url_response.headers:

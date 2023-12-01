@@ -4,6 +4,7 @@ import urllib.request
 import urllib.parse
 import sys
 
+
 def post_email():
     """A python function that posts an email"""
     email_data = {'email': sys.argv[2]}
