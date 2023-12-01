@@ -5,6 +5,7 @@ import sys
 
 
 def search_api():
+    """Write a Python script that takes in a letter and sends a POST"""
     if len(sys.argv) > 1:
         q = sys.argv[1]
     else:
