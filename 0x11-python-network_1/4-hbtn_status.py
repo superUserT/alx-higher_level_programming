@@ -2,10 +2,14 @@
 """ use requests """
 import requests
 
-
-if __name__ == "__main__":
-    response = requests.get("https://alx-intranet.hbtn.io/status")
+def fetch_status():
+    """function that fetches a status"""
+    url_response = requests.get("https://alx-intranet.hbtn.io/status")
 
     print("Body response:")
-    print("\t- type:", type(response.text))
-    print("\t- content:", response.text)
+    print("\t- type:", type(url_response.text))
+    print("\t- content:", url_response.text)
+
+
+if __name__ == "__main__":
+    fetch_status()

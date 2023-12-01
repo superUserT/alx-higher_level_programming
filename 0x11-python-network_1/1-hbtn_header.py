@@ -3,8 +3,11 @@
 import urllib.request
 import sys
 
+def response_header_value():
+    """ sends a request to the URL and displays the value of the X-Request-Id"""
+    with urllib.request.urlopen(sys.argv[1]) as url_response:
+        if 'X-Request-Id' in url_response.headers:
+            print(url_response.headers['X-Request-Id'])
 
 if __name__ == "__main__":
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        if 'X-Request-Id' in response.headers:
-            print(response.headers['X-Request-Id'])
+    response_header_value()

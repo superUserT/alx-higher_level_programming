@@ -4,15 +4,15 @@ import requests
 import sys
 
 
-if __name__ == "__main__":
+def search_api():
     if len(sys.argv) > 1:
         q = sys.argv[1]
     else:
         q = ""
 
-    url = "http://0.0.0.0:5000/search_user"
-    response = requests.post(url, data={'q': q})
-    response_data = response.json()
+    url_string = "http://0.0.0.0:5000/search_user"
+    url_response = requests.post(url_string, data={'q': q})
+    response_data = url_response.json()
 
     try:
         if response_data:
@@ -21,3 +21,6 @@ if __name__ == "__main__":
             print("No result")
     except Exception as e:
         print("Not a valid JSON")
+
+if __name__ == "__main__":
+    search_api()
