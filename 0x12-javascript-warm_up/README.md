@@ -1,4 +1,6 @@
-avaScript Warm-up
+# 0x12. JavaScript - Warm up
+
+JavaScript Warm-up
 
 This repository contains a set of JavaScript tasks and exercises that cover fundamental concepts and practical applications. The project aims to provide a solid foundation in JavaScript and prepares you for more advanced coding challenges. Below is an overview of the project and its contents:
 Background Context
